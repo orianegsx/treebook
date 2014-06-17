@@ -1,0 +1,18 @@
+<h1>Nouvel auteur</h1>
+
+<%= form_for(@auteur) do |f| %>
+
+
+  <div class = "field">
+    <%= f.label :nom %><br>
+  <%= f.text_field :nom %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  
+<% end %>
+
+
+<%= link_to 'Back', auteurs_path %>
